@@ -1,15 +1,15 @@
 const { expect } = require("chai");
-// Apne mylib.js ka sahi path yahan dein (agar root mein hai toh "../mylib")
+
 const { add, subtract, multiply, divide } = require("../mylib");
 
 describe("mylib - Arithmetic Operations", function () {
   
-  // YEH HOOK HAI: Testing shuru hone se pehle sirf EK BAAR chalega
+  // this will run only a time before testing
   before(function () {
     console.log(">>> Starting mylib test suite...");
   });
 
-  // YEH HOOK HAI: Saari testing khatam hone ke baad sirf EK BAAR chalega
+  // this will run only a time after testing
   after(function () {
     console.log(">>> mylib test suite completed.");
   });
